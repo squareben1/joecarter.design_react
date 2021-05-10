@@ -1,0 +1,65 @@
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1192px;
+
+.App {
+  color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  font-size: 35vw;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: relative;
+  right: 10px;
+  line-height: 0.9em;
+  letter-spacing: -0.04em;
+
+}
+
+.emailAddress {
+  padding-top: 1%;
+  padding-left: 5px;
+  font-size: 15.6vw;
+  letter-spacing: -0.03em;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .header {
+    font-size: 26vw;
+  }
+  .emailAddress {
+    font-size: 12vw;
+  }
+}
+
+
+// .App {
+//   display: flex;
+//   flex-direction: column;
+//   background-color: lightgray;
+//   color: black;
+//   text-align: justify;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+// .header {
+//   font-size: 18vw;
+//   position: absolute;
+//   letter-spacing: -0.05em;
+// }
+
+// .emailAddress {
+//   padding-left: 1%;
+//   font-size: 8vw;
+//   position: absolute;
+//   bottom: 0px;
+// }

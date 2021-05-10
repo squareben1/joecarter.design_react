@@ -1,27 +1,29 @@
 $breakpoint-tablet: 767px;
-$breakpoint-desktop: 1192px;
+$breakpoint-desktop: 1030px;
 
 .App {
   color: black;
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
-  font-size: 35vw;
+  font-size: 34vw;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   position: relative;
   right: 10px;
   line-height: 0.9em;
   letter-spacing: -0.04em;
-
 }
 
 .emailAddress {
   padding-top: 1%;
   padding-left: 5px;
-  font-size: 15.6vw;
+  font-size: 15.1vw;
   letter-spacing: -0.03em;
   right: 0px;
   top: 0px;
@@ -40,26 +42,28 @@ $breakpoint-desktop: 1192px;
   }
 }
 
+@media (min-width: $breakpoint-desktop) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+  }
+  .header {
+    font-size: 19.5vw;
+    writing-mode: horizontal-tb;
+    transform: unset;
+    position: relative;
+  }
+  .emailAddress {
+    font-size: 9vw;
+    letter-spacing: -0.04em;
+    writing-mode: horizontal-tb;
+    transform: unset;
+    left: 0px;
+    position: absolute;
+    bottom: 0px; 
+    top: unset;
+  }
+}
 
-// .App {
-//   display: flex;
-//   flex-direction: column;
-//   background-color: lightgray;
-//   color: black;
-//   text-align: justify;
-//   width: 100vw;
-//   height: 100vh;
-// }
-
-// .header {
-//   font-size: 18vw;
-//   position: absolute;
-//   letter-spacing: -0.05em;
-// }
-
-// .emailAddress {
-//   padding-left: 1%;
-//   font-size: 8vw;
-//   position: absolute;
-//   bottom: 0px;
-// }
+// TODO: Add landscape versions.

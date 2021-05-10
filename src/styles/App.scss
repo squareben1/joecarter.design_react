@@ -15,6 +15,7 @@ $breakpoint-desktop: 1192px;
   right: 10px;
   line-height: 0.9em;
   letter-spacing: -0.04em;
+
 }
 
 .emailAddress {
@@ -29,6 +30,16 @@ $breakpoint-desktop: 1192px;
   transform: rotate(180deg);
   position: absolute;
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .header {
+    font-size: 30vw;
+  }
+  .emailAddress {
+    font-size: 12vw;
+  }
+}
+
 
 // .App {
 //   display: flex;

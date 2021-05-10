@@ -1,0 +1,22 @@
+$breakpoint-iphonex: 374px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1192px;
+
+$breakpoints: (
+  'iphonex': ( min-width: $breakpoint-iphonex ),
+  'tablet' : ( min-width: $breakpoint-tablet ),
+  'desktop': ( min-width: $breakpoint-desktop )
+);
+ 
+@mixin respond-to($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$breakpoints}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+
+}

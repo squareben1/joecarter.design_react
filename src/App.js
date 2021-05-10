@@ -1,12 +1,11 @@
-import './App.scss';
+import './styles/App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <div>Temporary holding page</div>
-      </header>
+      <div className="header">Temporary holding page</div>
       <div className="emailAddress">joecarterdesign@gmail.com</div>
+
     </div>
   );
 }

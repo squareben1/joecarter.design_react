@@ -1,5 +1,5 @@
 $breakpoint-tablet: 767px;
-$breakpoint-desktop: 1030px;
+$breakpoint-tablet-horizontal: 1023px;
 
 .App {
   color: black;
@@ -42,7 +42,7 @@ $breakpoint-desktop: 1030px;
   }
 }
 
-@media (min-width: $breakpoint-desktop) {
+@media (min-width: $breakpoint-tablet-horizontal) {
   .App {
     display: flex;
     flex-direction: column;
@@ -66,4 +66,4 @@ $breakpoint-desktop: 1030px;
   }
 }
 
-// TODO: Add landscape versions.
+// TODO: Add mobile landscape version. Add iPad Pro. 
